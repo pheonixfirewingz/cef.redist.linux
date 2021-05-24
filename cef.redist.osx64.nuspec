@@ -9,6 +9,7 @@
     <description>CEF - the Chromium Embedded Framework.</description>
     <copyright>Copyright © 2021</copyright>
     <tags>chrome chromium native embedded browser CEF nativepackage OSX64</tags>
+    <license type="file">LICENSE.txt</license>
   </metadata>
   <files>
     <file src="package/**" />
