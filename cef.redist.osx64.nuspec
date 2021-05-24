@@ -14,5 +14,6 @@
   <files>
     <file src="package/**" />
     <file src="build/**" target="build/" />
+    <file src="LICENSE.txt" target="LICENSE.txt" />
   </files>
 </package>
