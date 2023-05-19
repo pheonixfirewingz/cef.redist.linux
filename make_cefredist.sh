@@ -20,7 +20,6 @@ if [ ! -d "$CEFBINARIES" ]; then
     tar -jxvf "$CEFZIP" -C "./$CEFBINARIES"
 fi
 echo "copying cef binaries"
-cp -Rv "${PWD}/$(find $CEFBINARIES -name "Release")/" "$OUTPUT/CEF/"
-cp -Rv "${PWD}/$(find $CEFBINARIES -name "Resources")/" "$OUTPUT/CEF/Resources/"
-cp -Rv "${PWD}/$(find $CEFBINARIES -name "Resources")/locales/" "$OUTPUT/CEF/Resources/locals/"
+cp -v "${PWD}/$(find $CEFBINARIES -name "Release")/libcef.so" "$OUTPUT/CEF/libcef.so"
+cp -Rv "${PWD}/$(find $CEFBINARIES -name "Resources")/" "$OUTPUT/CEF/"
 cd ..
