@@ -11,9 +11,16 @@
     <tags>chrome chromium native embedded browser CEF nativepackage Linux X86_64</tags>
     <license type="file">LICENSE.txt</license>
   </metadata>
-  <files>
-    <file src="package/**" />
-    <file src="build/**" target="build/" />
-    <file src="LICENSE.txt" target="LICENSE.txt" />
+ <files>
+    <file src="package\CEF*.so.*" target="CEF\" />
+    <file src="package\CEF\*.so" target="CEF\" />
+    <file src="package\CEF\*.bin" target="CEF\" />
+	  <file src="package\CEF\*.json" target="CEF\" />
+    <file src="package\CEF\*.pak" target="CEF\"/>
+    <file src="package\CEF\*.dat" target="CEF\"/>
+    <file src="package\CEF\locales\*.pak" target="CEF\locales"/>
+	  <file src="LICENSE.txt" target="LICENSE.txt" />
+    <file src="build\**" target="build\" />
+    <file src="build\**" target="buildTransitive\" />
   </files>
 </package>

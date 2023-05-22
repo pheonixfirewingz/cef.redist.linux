@@ -30,5 +30,5 @@ strip -v -s "package/CEF/libGLESv2.so"
 strip -v -s "package/CEF/libvk_swiftshader.so"
 strip -v -s "package/CEF/libvulkan.so.1"
 cd "$TMP" || exit 1
-cp -Rv "${PWD}/$(find $CEFBINARIES -name "Resources")/" "$OUTPUT/CEF/"
+cp -Rv "${PWD}/$(find $CEFBINARIES -name "Resources")/." "$OUTPUT/CEF/"
 cd ..
